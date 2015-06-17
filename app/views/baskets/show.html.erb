@@ -4,6 +4,7 @@
 <ul></ul>
 <% @basket.items.each do |item| %>
   <li><%= item.product.name %></li>
+  <%= button_to 'Remove from Basket', item, method: :delete %>
 <% end %>
 </ul>
 
