@@ -10,4 +10,4 @@
 
 6. As a User I am alerted when I apply an invalid voucher to my shopping cart
 
-7. As a User I am unable to Out of Stock products to the shopping cart.
+7. As a User I am unable to add Out of Stock products to the shopping cart.
