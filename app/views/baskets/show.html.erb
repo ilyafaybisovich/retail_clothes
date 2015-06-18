@@ -1,12 +1,10 @@
-<p id="notice"><%= notice %></p>
-
 <h2>Your Basket</h2>
-<ul></ul>
+<ul>
 <% @basket.items.each do |item| %>
   <li><%= item.product.name %></li>
   <%= button_to 'Remove from Basket', item, method: :delete %>
 <% end %>
 </ul>
 
-<%= link_to 'Edit', edit_basket_path(@basket) %> |
-<%= link_to 'Back', baskets_path %>
+Total: <%= number_to_currency(@basket.total_cost) %>
+
